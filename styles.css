@@ -1,0 +1,1228 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,200&display=swap');
+
+
+/* Dashboard Container */
+body {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+}
+.Dashboard {
+  display: flex;
+  background-color: #F4F6F9;
+  align-items: flex-start; 
+  
+}
+.mainBoard  {
+  background-color: #F4F6F9;
+  font-weight: 100;
+}
+.mainBoard .menubar {
+  background-color: #1C797E;
+}
+.Dashboard ul li {
+  list-style: none;
+}
+/* Left Sidebar - 30% of the screen */
+.dashSide {
+  width: 28%;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #78828a;
+  background-color: white;
+  flex-grow: 0; 
+  height: auto; 
+  font-weight: 100;
+
+}
+#menuButton {
+  display: none;
+}
+.dashSide.active {
+  display: block; 
+  animation: slideInFromLeft 1s ease-out; 
+  animation-delay: 0.2s;
+}
+.dashSide h2 {
+  text-align: center;
+}
+/* Sidebar links */
+.sideBar {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sideBar li {
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+/* Right side content area (70%)  */
+.sideBarContainer {
+  flex-grow: 1;
+  font-weight: 100;
+
+}
+/* Basic Header Styling */
+.mainBoard header {
+    background-color: #1C797E;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10rem;
+    position: relative;
+    padding-bottom: 2rem;
+    font-weight: 100;
+}
+.mainBoard nav {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 40%;
+  text-align: center;
+  
+}
+
+/* Button Styling */
+.headButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  background-color: white;
+  border-radius: 2rem;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+/* Flex Container for the dropdown */
+.HeadSubBtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Dropdown Styling */
+.countryDropdown {
+  background-color: transparent;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+/* Dropdown Option Styling */
+.countryDropdown option {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
+/* Styling the flag icons within the dropdown */
+.countryDropdown .flagOption {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.countryDropdown .flagOption i {
+  margin-right: 10px; 
+}
+
+/* Styling for the flag container before the dropdown */
+.flagImg i {
+  font-size: 20px; 
+  margin-right: 10px;
+}
+
+/* Container for profile picture and name */
+.profile-container {
+  display: flex;
+  align-items: center; 
+  gap: 10px; /
+}
+
+/* Profile picture styling */
+.profile-picture {
+  width: 30px; 
+  height: 30px; 
+  border-radius: 50%;
+  object-fit: cover; 
+  border: 2px solid #ddd; 
+}
+
+/* Profile name styling */
+.profile-name {
+  font-size: 18px; 
+  color: #FFFFFF; 
+}
+
+
+.backgroundImg img {
+    width: 100%;
+
+}
+.backgroundImg {
+    background-image: url("./images/background.jpeg");
+    background-position: top;
+    color: white;
+    background-size: cover;
+    padding: 2rem;
+    margin: 0 auto; 
+    z-index: 5; 
+    font-weight: 100;
+    font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  position: relative;
+    width: 90%;
+    height: 32vh;
+    /* filter: blur(4px); */
+
+}
+
+.backgroundImg button {
+    border: 2px solid white;
+    background-color: transparent;
+    padding: 1rem 2rem;
+    margin: 3px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+.backgroundImg button:hover {
+   background-color: #ddd;
+   color: black;
+}
+.content {
+  position: absolute;
+  top: 50%;
+  width: 96%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1; 
+}
+
+.content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  font-size: 1.5rem;
+}
+
+.content {
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 20px;
+}
+
+.container {
+    display: flex; 
+    gap: 1rem; 
+    justify-content: space-around; 
+    align-items: flex-start;
+    margin: 2rem auto; 
+    /* margin-top: 15rem; */
+    padding: 0 2.5rem;
+    color: #78828a;
+  }
+  
+  .container > div {
+    background-color: white; 
+    padding: 1rem; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 2px;
+    flex: 1; 
+    max-width: 100%; 
+  }
+  
+  .sales {
+    display: flex;
+    align-items: center;
+    line-height: 1rem;
+    /* justify-content: space-between; */
+  }
+   .count {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+   .inbox , .imgDiv{
+    background-color: #6777EF;
+    padding: 1rem;
+   margin: 0 1rem;
+   }
+   .inbox2{
+    padding:1rem 1.5rem;
+    background-color: #6777EF;
+    margin: 0 1rem;
+
+   }
+   .score {
+    text-align: center;
+   }
+   .messageContainer {
+    display: flex;
+    padding: 1rem 2rem;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+   }
+   .tainer {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 100%; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    
+   }
+   .imgDiv2 {
+    background-color: #FC544B;
+    padding: 1rem;
+   margin: 0 1rem;
+   }
+   .imgDiv3{
+    background-color: #FFA426;
+    padding: 1rem;
+   margin: 0 1rem;
+   }
+   .imgDiv4 {
+    background-color: #47C363;
+    padding: 1rem;
+   margin: 0 1rem;
+   }
+   .mainBoard nav i {
+    font-size: 2rem;
+  }
+.infoIcon {
+  background-color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 50%;
+}
+.notificon{
+  color: white;
+  font-size: 2rem;
+}
+   /* STATBOARD */
+  .statBoard{
+    display: flex;
+   }
+   .salesStat{
+    width: 70%;
+
+   }
+ 
+   .statimg img {
+    width: 100%;
+   } 
+   .statflow{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+
+   } 
+
+   .statBoard {
+    display: flex;
+    gap: 1rem; 
+    padding: 2rem;
+
+  }
+  
+  .salesStat {
+    flex: 7; 
+    width: 70%;
+    background-color: white;
+    padding: 1rem; 
+    border-radius: 2px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+   
+  .monthly{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+    cursor: pointer;
+
+
+  }
+  .yearly {
+    background-color: #6777EF;
+    padding:0 1rem;
+    border-radius: 0 2rem 2rem 0;
+  }
+  .yearly h3 {
+    line-height: .6rem;
+    color: white;
+  }
+  .recentComment {
+    flex: 3; 
+    background-color: white; 
+    padding: 1rem; 
+    border-radius: 2px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+  }
+  
+   .recentComment button {
+    background-color:  #6777EF; 
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-top: 100%;
+    width: 30%;
+    margin: 0 auto;
+    
+  }
+   .recentComment button:hover {
+    background-color:  #8e9bfe; 
+  } 
+  .previous {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    line-height: .9rem;
+    padding: 2rem;
+  font-size: .8rem;
+  color: #78828a;
+
+  }
+  .previous h4 {
+    font-size: rem;
+    line-height: 0.5rem;
+
+  }
+  .pre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.recent {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin: 2rem;
+
+
+}
+.recent1, .recent2, .recent3 {
+  background-color: white;
+  border-radius: 1px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+.recent h5 {
+  color: #6777ef;
+  text-align: center;
+}
+.pending {
+  padding: 1rem ;
+  font-size: .8rem;
+}
+.support {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, #6777EF, #95A0F4);
+}
+.penImg {
+  width: 30%;
+}
+.penImg img {
+  width: 100%;
+}
+.userImg {
+width: 95%;
+margin: 0 auto;
+}
+.userImg img {
+  width: 100%;
+}
+.user {
+  border-radius: 2px;
+  box-shadow: 2px  4px 8px rgba(0, 0, 0, 0.1); 
+  padding: 1rem;
+  margin: 2rem;
+  background-color: white;
+}
+.user h3 {
+  padding-left: 2rem;
+  color: #6777EF;
+  padding-bottom: 2rem;
+}
+
+/* ANIMATION */
+/* Slide-in from the left */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Slide-in from the right */
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Slide-in from the top */
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Slide-in from the bottom */
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Fade-in */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* Main Dashboard container slides from the left */
+.Dashboard {
+  animation: slideInFromLeft 1s ease-out;
+}
+
+/* Sidebar from the left */
+.dashSide {
+  animation: slideInFromLeft 1s ease-out;
+  animation-delay: 0.2s;
+}
+
+/* Right-side container from the right */
+.sideBarContainer {
+  animation: slideInFromRight 1s ease-out;
+  animation-delay: 0.3s;
+}
+
+/* Statboard content fades in */
+.statBoard {
+  animation: fadeIn 1.5s ease-in-out;
+  animation-delay: 0.5s;
+}
+
+/* Sales Statistics content slides from the top */
+.salesStat {
+  animation: slideInFromTop 1.5s ease-out;
+  animation-delay: 0.7s;
+}
+
+.profile-container {
+  animation: scaleUp 1s ease-in-out;
+  animation-delay: 0.4s;
+}
+
+/* Header fades in */
+.mainBoard header {
+  animation: fadeIn 1s ease-in-out;
+  animation-delay: 0.2s;
+}
+
+/* Button in Recent Comments scales up with a delay */
+.recentComment button {
+  animation: scaleUp 1s ease-in-out;
+  animation-delay: 1.5s;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (min-width: 2560px){
+  .Dashboard {
+    font-size: 2rem;
+  }
+  .previous{
+    font-size: 1.5rem;
+  }
+ .recent {
+  gap: 1rem;
+ }
+ .recent1, .recent2, .recent3 {
+  width: 100%;
+}
+.recent h3 {
+  font-size: 2rem;
+
+}
+.recentComment button {
+  font-size: 2rem;
+}
+.dashSide ul li{
+  gap: 1rem;
+}
+.backgroundImg{
+  width: 89%;
+  height: 32vh;
+
+}
+.content {
+  position: absolute;
+  top: 50%;
+  width: 98%;
+  height: 35vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1; 
+}
+.mainBoard nav {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  
+}
+.mainBoard nav i {
+  font-size: 2rem;
+}
+.profile-container {
+  display: flex;
+  align-items: center; 
+  gap: 10px; /
+}
+
+.profile-picture {
+  width: 60px; 
+  height: 60px; 
+  border-radius: 50%;
+  object-fit: cover; 
+  border: 2px solid #ddd; 
+}
+
+.profile-name {
+  font-size: 2rem; 
+  color: #FFFFFF; 
+}
+}
+@media screen and (max-width: 1440px){
+  .Dashboard, .salesStat{
+    font-size: 18px;
+  }
+ 
+  .backgroundImg {
+    font-size: 18px;
+  }
+  .previous{
+font-size: 16px;
+padding: 0;
+  }
+  .content {
+    position: absolute;
+    top: 50%;
+    width: 97%;
+    height: 35vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1; 
+  }
+}
+@media screen and (max-width: 1024px){
+  .Dashboard{
+    font-size: 16px;
+  }
+  .monthly{
+  width: 30%;
+  }
+  .previous{
+    font-size: 14px;
+    flex-wrap: wrap;
+  }
+  .recentComment button {
+    width: 60%;
+  }
+  .recent {
+    gap: 1rem;
+    font-size: 12px;
+  }
+  .content {
+    position: absolute;
+    top: 50%;
+    width: 95%;
+    height: 35vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1; 
+  }
+  .mainBoard nav {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    
+  }
+  .mainBoard nav i {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px){
+  .Dashboard {
+    flex-direction: column; 
+  }
+
+  .dashSide {
+    display: none; 
+    width: 100%;
+    padding: 10px;
+    animation: none; 
+  }
+  .dashSide.active {
+    display: block; 
+    animation: slideInFromLeft 1s ease-out;
+    animation-delay: 0.2s;
+    position: absolute;  
+    top: 3rem;              
+    left: 0;
+    z-index: 10;
+
+
+  }
+  #menuButton {
+    display: block;
+  }
+  .menubar {
+    padding: 1rem;
+    position: relative;
+    background-color: #1C797E;
+
+  }
+  /* Right side content full width */
+  .sideBarContainer {
+    width: 100%;
+  }
+
+  /* Header Adjustments */
+  .mainBoard header {
+    padding: 0;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+  
+  }
+
+  .mainBoard nav {
+    width: 100%;
+    justify-content: space-between; 
+    padding: 1rem;
+  }
+
+  /* Profile Container */
+  .profile-container {
+    text-align: center;
+  }
+  .countryDropdown {
+    padding: 5px;
+    font-size: 12px;
+  }
+  
+  /* Dropdown Option Styling */
+  .countryDropdown option {
+    padding: 5px;
+    display: flex;
+   
+  }
+  
+  /* Styling the flag icons within the dropdown */
+  .countryDropdown .flagOption {
+    font-size: 12px;
+  }
+  
+  .countryDropdown .flagOption i {
+    margin-right: 8px; 
+  }
+  
+  /* Styling for the flag container before the dropdown */
+  .flagImg i {
+    font-size: 16px; 
+    margin: 6px;
+  }
+  .messageContainer {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+   }
+  
+  /* Container for profile picture and name */
+  .profile-container {
+    gap: 2px; /
+  }
+  
+  /* Profile picture styling */
+  .profile-picture {
+    width: 25px; 
+    height: 25px;  
+    margin-right: 1rem; 
+  }
+  
+  /* Profile name styling */
+  .profile-name {
+    font-size: 18px; 
+    color: #FFFFFF; 
+  }
+  
+  
+  /* Background Image Section */
+  .headButton {
+    padding: 4px;
+  }
+  .backgroundImg {
+    background-image: url("./images/background.jpeg");
+    background-position: top;
+    height: 41vh;
+    width: 80%;
+  
+}
+.content {
+  position: absolute;
+  top: 50%;
+  width: 94%;
+  height: 43vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1; 
+}
+.backgroundImg img {
+    width: 100%; 
+    /* height: auto;  */
+}
+
+.backgroundImg button {
+    border: 2px solid white;
+    background-color: transparent;
+    padding: 1rem 2rem;
+    margin-bottom: .5rem;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.backgroundImg button:hover {
+   background-color: #ddd;
+   color: black;
+}
+.overlay {
+   background-color: rgba(0, 0, 0, 0.5); 
+  }
+  .content {
+    font-size: 16px;
+  }
+ 
+  .container {
+    flex-direction: column;   
+    margin: 0 auto;    
+    gap: 1.5rem;    
+    padding: 0;   
+    font-size: 12px;    
+    padding-top: 2rem; 
+}
+
+.container > div {
+    width: 86%;              
+    margin: 0 auto;                
+}
+  .tainer{
+    font-size: 12px;
+  }
+  .statBoard {
+    flex-direction: column; 
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .salesStat,
+  .recentComment {
+    width: 100%; 
+    font-size: 12px;
+  
+  }
+
+  /* Recent Section */
+  .monthly{
+    width: 40%;
+  }
+  .previous {
+    padding: 0;
+    gap: 2rem;
+    flex-direction: row;    
+    flex-wrap: wrap;        
+    justify-content: space-between; 
+}
+.previous h3, .previous h2 {
+  line-height: 1px;
+
+}
+.mainPre{
+  font-weight: 100;
+}
+.pre img {
+  padding-right: 6px;
+}
+  .pre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .recent {
+    flex-direction: column;
+    gap: 1rem;
+  margin: 1rem;
+  }
+
+  .recent h5 {
+    margin-bottom: 1rem;
+  }
+
+  /* Support Section */
+
+
+  .penImg {
+    width: 30%; 
+    margin-bottom: 1rem; 
+    padding: 0;
+  }
+
+  .penImg img {
+    width: 100%;
+  }
+  .pending {
+    padding: 0 ;
+    padding-left: 1rem;
+    font-size: .8rem;
+  }
+  .support {
+    display: flex;
+    text-align: start;
+    justify-content: space-between;
+  }
+  .user {
+    padding: 1rem;
+    margin: 2rem 1rem;
+    background-color: white;
+  }
+  .user h3 {
+    padding-left: 0;
+    color: #6777EF;
+    font-size: 12px;
+    padding-bottom: 0;
+  }
+  .userImg {
+    width: 100%;
+  }
+
+  /* Animations (Apply them for desktop view) */
+  .Dashboard {
+    animation: slideInFromLeft 1s ease-out;
+  }
+
+  .dashSide {
+    animation: slideInFromLeft 1s ease-out;
+    animation-delay: 0.2s;
+  }
+
+  .sideBarContainer {
+    animation: slideInFromRight 1s ease-out;
+    animation-delay: 0.3s;
+  }
+
+  .statBoard {
+    animation: fadeIn 1.5s ease-in-out;
+    animation-delay: 0.5s;
+  }
+
+  .profile-container {
+    animation: scaleUp 1s ease-in-out;
+    animation-delay: 0.4s;
+  }
+
+  .salesStat {
+    animation: slideInFromTop 1.5s ease-out;
+    animation-delay: 0.7s;
+  }
+
+  .recentComment {
+    animation: slideInFromBottom 1.5s ease-out;
+    animation-delay: 1s;
+  }
+
+  .recentComment button {
+    animation: scaleUp 1s ease-in-out;
+    animation-delay: 1.5s;
+    font-size: 12px;
+    padding: .4rem 0;
+    margin-top: 4rem;
+  }
+}
+@media screen and (max-width: 668) {
+  .backgroundImg {
+    background-image: url("./images/background.jpeg");
+    background-position: left;
+    padding: 2rem;
+    width:88%; 
+    height: 60vh; 
+    top: 30%;
+    z-index: 5; 
+    left: 65%; 
+}
+
+}
+@media screen and  (max-width : 425) {
+  .container > div {
+    width: 90%;              
+    margin: 0 auto;                
+}
+.backgroundImg {
+  background-position: left;
+  padding: 2rem;
+  width: 50%; 
+  font-size: 12px;
+}
+
+.backgroundImg img {
+  width: 100%; 
+  height: auto; 
+}
+
+.backgroundImg button {
+  border: 2px solid white;
+  background-color: transparent;
+  padding: .9rem 2rem;
+  margin-bottom: .5rem;
+  border-radius: 6px;
+  font-size: 12px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.backgroundImg button:hover {
+ background-color: #ddd;
+ color: black;
+}
+
+  
+}
+@media screen and  (max-width: 375px) {
+  /* Dashboard Flex Adjustment */
+  .Dashboard {
+    flex-direction: column; 
+  }
+
+  /* Sidebar hidden by default on smaller screens */
+  .dashSide {
+    display: none; 
+    width: 100%;
+    padding: 10px;
+    animation: none; 
+  }
+  .dashSide.active {
+    display: block; 
+    animation: slideInFromLeft 1s ease-out;
+    animation-delay: 0.2s;
+  }
+  .menubar {
+    padding: 1rem;
+
+  }
+  /* Right side content full width */
+  .sideBarContainer {
+    width: 100%;
+  }
+
+  /* Header Adjustments */
+  .mainBoard header {
+    padding: 0;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+  
+  }
+
+  .mainBoard nav {
+    width: 100%;
+    justify-content: space-between; 
+    padding: 1rem;
+  }
+
+  /* Profile Container */
+  .profile-container {
+    text-align: center;
+  }
+  .countryDropdown {
+    padding: 5px;
+    font-size: 12px;
+  }
+  
+  /* Dropdown Option Styling */
+  .countryDropdown option {
+    padding: 5px;
+    display: flex;
+   
+  }
+  
+  /* Styling the flag icons within the dropdown */
+  .countryDropdown .flagOption {
+    font-size: 12px;
+  }
+  
+  .countryDropdown .flagOption i {
+    margin-right: 8px; 
+  }
+  
+  /* Styling for the flag container before the dropdown */
+  .flagImg i {
+    font-size: 16px; 
+    margin: 6px;
+  }
+  .messageContainer {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+   }
+  
+  /* Container for profile picture and name */
+  .profile-container {
+    gap: 2px; 
+
+  }
+  
+  /* Profile picture styling */
+  .profile-picture {
+    width: 20px; 
+    height: 20px;  
+    margin-right: .5rem; 
+  }
+  
+  /* Profile name styling */
+  .profile-name {
+    font-size: 12px;
+    color: #FFFFFF; 
+  }
+  
+  
+  /* Background Image Section */
+  .headButton {
+    padding: 4px;
+  }
+  .backgroundImg {
+    background-image: url("./images/background.jpeg");
+    background-position: left;
+    padding: 2rem;
+    width: 70%; 
+    height: 60vh; 
+    top: 22%;
+    z-index: 5; 
+    left: 65%; 
+    font-size: 12px;
+}
+
+.backgroundImg img {
+    width: 100%; 
+    height: auto; 
+}
+
+.backgroundImg button {
+    border: 2px solid white;
+    background-color: transparent;
+    padding: .9rem 2rem;
+    margin-bottom: .5rem;
+    border-radius: 6px;
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.backgroundImg button:hover {
+   background-color: #ddd;
+   color: black;
+}
+
+  
+  /* Flex Containers */
+  .container {
+    flex-direction: column; 
+    gap: 1rem;
+  }
+
+ 
+  .container {
+    align-items: center;
+    margin: 1rem 0; 
+    padding: 0 ;
+    font-size: 12px;
+  }
+  
+  .container > div {
+    padding: 1rem; 
+    flex: 2; 
+    width: 80%; 
+    font-size: 11px;
+  }
+
+  .tainer{
+    font-size: 11px;
+  }
+  /* Statboard Adjustments */
+  .previous {
+    font-size: 11px;
+    gap: 1rem;
+  }
+  .statflow {
+    padding-bottom: .6rem;
+  }
+}

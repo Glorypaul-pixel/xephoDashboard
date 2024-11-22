@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div>
+      <!-- Left Sidebar -->
+      <div class="mainBoard">
+        <div class="menubar">
+          <button id="menuButton">☰</button>
+        </div>
+        <header>
+          <div></div>
+          <nav>
+            <button class="headButton">
+              <div class="HeadSubBtn">
+                <div class="flagImg">
+                  <i class="fas fa-flag-usa"></i>
+                </div>
+                <select class="countryDropdown">
+                  <option value="en" class="flagOption">
+                    <i class="fas fa-flag-usa"></i> English
+                  </option>
+                  <option value="es" class="flagOption">
+                    <i class="fas fa-flag-spain"></i> Español
+                  </option>
+                  <option value="fr" class="flagOption">
+                    <i class="fas fa-flag-france"></i> Français
+                  </option>
+                  <option value="de" class="flagOption">
+                    <i class="fas fa-flag-germany"></i> Deutsch
+                  </option>
+                  <option value="it" class="flagOption">
+                    <i class="fas fa-flag-italy"></i> Italiano
+                  </option>
+                </select>
+              </div>
+            </button>
+            <div class="infoIcon">
+              <i class="fa-solid fa-info"></i>
+            </div>
+            <div class="notificon">
+              <i class="fa-regular fa-bell"></i>
+            </div>
+            <div class="profile-container">
+              <div class="profile-picture"></div>
+              <span class="profile-name">John Doe</span>
+            </div>
+          </nav>
+        </header>
+      </div>
+      <div class="Dashboard">
+        <div class="dashSide">
+          <h2>XEPHO LMS</h2>
+          <ul class="sideBar">
+            <ul>
+              <li>
+                <i class="fas fa-tachometer-alt"></i>
+                Dashboard
+              </li>
+              <li>
+                <i class="fas fa-chart-line"></i>
+                Marketing Dashboard
+              </li>
+            </ul>
+
+            <li>
+              <i class="fas fa-graduation-cap"></i>
+              Education
+              <ul>
+                <li><i class="fas fa-book"></i> Courses</li>
+                <li><i class="fas fa-calendar"></i> Upcoming Courses</li>
+                <li><i class="fas fa-clipboard"></i> Quizzes</li>
+                <li><i class="fas fa-certificate"></i> Certificates</li>
+                <li><i class="fas fa-pencil-alt"></i> Assignments</li>
+                <li><i class="fas fa-comments"></i> Course Forum</li>
+                <li><i class="fas fa-globe"></i> Environment</li>
+                <li><i class="fas fa-wallet"></i> Wallets</li>
+                <li><i class="fas fa-list"></i> Categories</li>
+                <li><i class="fas fa-filter"></i> Filters</li>
+                <li><i class="fas fa-star"></i> Reviews</li>
+              </ul>
+            </li>
+            <li>
+              <i class="fas fa-users"></i>
+              Meetings
+              <ul>
+                <li><i class="fas fa-user-md"></i> Consultants</li>
+                <li><i class="fas fa-calendar-check"></i> Meetings</li>
+              </ul>
+            </li>
+            <li>
+              <i class="fas fa-user"></i>
+              Users
+              <ul>
+                <li><i class="fas fa-users"></i> Users</li>
+                <li><i class="fas fa-users-cog"></i> Groups</li>
+                <li><i class="fas fa-badge"></i> Badges</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="sideBarContainer">
+          <div class="backgroundImg">
+            <div class="content">
+              <h1>Welcome, John!</h1>
+              <p>
+                Everything is in your control, use quick across buttons to
+                manage related actions easily.
+              </p>
+              <button type="submit">Comments</button>
+              <button type="submit">Tickets</button>
+              <button type="submit">Reports</button>
+            </div>
+          </div>
+          <div class="container">
+            <div class="courseDisplay">
+              <div class="dailySalea">
+                <h3>Course Type Daily Sales</h3>
+                <div class="count">
+                  <div class="course">
+                    <div class="score">0</div>
+                    <div class="live"><h3>Live Class</h3></div>
+                  </div>
+                  <div class="course">
+                    <div class="score">0</div>
+                    <div class="live"><h3>Course</h3></div>
+                  </div>
+                  <div class="course">
+                    <div class="score">0</div>
+                    <div class="live"><h3>Meeting</h3></div>
+                  </div>
+                </div>
+                <div class="sales">
+                  <div>
+                    <div class="inbox">
+                      <img src="./images/Symbol24.png" alt="" />
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3>Today Sales</h3>
+                    <h1>0</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="platformIncome">
+              <div class="dailySalea">
+                <h3>Platform Income</h3>
+                <div class="count">
+                  <div class="course">
+                    <div class="score">0</div>
+                    <div class="live"><h3>Today</h3></div>
+                  </div>
+                  <div class="course">
+                    <div class="score">0</div>
+                    <div class="live"><h3>Month</h3></div>
+                  </div>
+                  <div class="course">
+                    <div class="score">0</div>
+                    <div class="live"><h3>Year</h3></div>
+                  </div>
+                </div>
+                <div class="sales">
+                  <div>
+                    <div class="inbox2">
+                      <img src="./images/Symbol27.png" alt="" />
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3>Today Income</h3>
+                    <h1>0</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="saleCount">
+              <div class="dailySalea">
+                <h3>Sales Count</h3>
+                <div class="count">
+                  <div class="course">
+                    <div class="score">0</div>
+                    <div class="live"><h3>Today</h3></div>
+                  </div>
+                  <div class="course">
+                    <div class="score">0</div>
+                    <div class="live"><h3>Month</h3></div>
+                  </div>
+                  <div class="course">
+                    <div class="score">0</div>
+                    <div class="live"><h3>Year</h3></div>
+                  </div>
+                </div>
+                <div class="sales">
+                  <div>
+                    <div class="inbox">
+                      <img src="./images/Symbol25.png" alt="" />
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3>Total Sales</h3>
+                    <h1>0</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="messageContainer">
+            <div class="tainer">
+              <div>
+                <div class="imgDiv">
+                  <img src="./images/Symbol25.png" alt="" />
+                </div>
+              </div>
+
+              <div>
+                <h3>New Sale</h3>
+                <h3>0</h3>
+              </div>
+            </div>
+            <div class="tainer">
+              <div>
+                <div class="imgDiv2">
+                  <img src="./images/Symbol26.png" alt="" />
+                </div>
+              </div>
+
+              <div>
+                <h3>New Sale</h3>
+                <h3>0</h3>
+              </div>
+            </div>
+            <div class="tainer">
+              <div>
+                <div class="imgDiv3">
+                  <img src="./images/Symbol28.png" alt="" />
+                </div>
+              </div>
+
+              <div>
+                <h3>New Sale</h3>
+                <h3>0</h3>
+              </div>
+            </div>
+            <div class="tainer">
+              <div>
+                <div class="imgDiv4">
+                  <img src="./images/Symbol29.png" alt="" />
+                </div>
+              </div>
+
+              <div>
+                <h3>New Sale</h3>
+                <h3>0</h3>
+              </div>
+            </div>
+          </div>
+          <div class="statBoard">
+            <div class="salesStat">
+              <div class="statflow">
+                <h3>Sales Statistics</h3>
+                <div class="monthly">
+                  <h3 class="h3">Month</h3>
+                  <div class="yearly"><h3>Year</h3></div>
+                </div>
+              </div>
+              <div class="statimg">
+                <img src="./images/image2.png" alt="" />
+              </div>
+              <div class="previous">
+                <div class="mainPre">
+                  <div class="pre">
+                    <img src="./images/Symbol40.png" alt="" />
+                    <h3>No Previous Value</h3>
+                  </div>
+                  <h2>0</h2>
+                  <h3>Today Sales</h3>
+                </div>
+                <div class="mainPre">
+                  <div class="pre">
+                    <img src="./images/Symbol40.png" alt="" />
+                    <h3>No Previous Value</h3>
+                  </div>
+                  <h2>0</h2>
+                  <h3>Week Sales</h3>
+                </div>
+                <div class="mainPre">
+                  <div class="pre">
+                    <img src="./images/Symbol40.png" alt="" />
+                    <h3>No Previous Value</h3>
+                  </div>
+                  <h2>0</h2>
+                  <h3>Month Sales</h3>
+                </div>
+                <div class="mainPre">
+                  <div class="pre">
+                    <img src="./images/Symbol40.png" alt="" />
+                    <h3>No Previous Value</h3>
+                  </div>
+                  <h2>0</h2>
+                  <h3>Year Sales</h3>
+                </div>
+              </div>
+            </div>
+            <div class="recentComment">
+              <h4>Recent Comments</h4>
+              <button type="submit">View All</button>
+            </div>
+          </div>
+          <div class="recent">
+            <div class="recent1">
+              <div class="support">
+                <div class="pending">
+                  <h3>Recent Support Tickets</h3>
+                  <h3>0 Pending Reply</h3>
+                </div>
+                <div class="penImg">
+                  <img src="./images/Symbol30.png" alt="" />
+                </div>
+              </div>
+              <h5>View All</h5>
+            </div>
+            <div class="recent2">
+              <div class="support">
+                <div class="pending">
+                  <h3>Recent Support Tickets</h3>
+                  <h3>0 Pending Reply</h3>
+                </div>
+                <div class="penImg penImg1">
+                  <img src="./images/Symbol31.png" alt="" />
+                </div>
+              </div>
+              <h5>View All</h5>
+            </div>
+            <div class="recent3">
+              <div class="support">
+                <div class="pending">
+                  <h3>Recent Support Tickets</h3>
+                  <h3>0 Pending Reply</h3>
+                </div>
+                <div class="penImg penImg2">
+                  <img src="./images/Symbol32.png" alt="" />
+                </div>
+              </div>
+              <h5>View All</h5>
+            </div>
+          </div>
+          <div class="user">
+            <h3>User Registration Statistics</h3>
+            <div class="userImg">
+              <img src="./images/statImg.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Content Section -->
+    </div>
+
+    <!-- FontAwesome Icons (for the icons beside menu items) -->
+    <script
+      src="https://kit.fontawesome.com/1ae310f4a8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const countryDropdown = document.querySelector(".countryDropdown");
+      const flagImg = document.querySelector(".flagImg i");
+
+      countryDropdown.addEventListener("change", function () {
+        const selectedOption =
+          countryDropdown.options[countryDropdown.selectedIndex];
+        const flagClass = selectedOption.querySelector("i").className;
+        flagImg.className = flagClass; // Update the flag icon class based on the selection
+      });
+
+      // Get the menu button and sidebar elements
+      const menuButton = document.querySelector("#menuButton"); // Make sure your button has this ID
+      const dashSide = document.querySelector(".dashSide");
+
+      // Add click event listener to the menu button
+      menuButton.addEventListener("click", function () {
+        // Toggle the 'active' class on dashSide to show/hide it
+        dashSide.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
